@@ -26,7 +26,7 @@ test("Job endpoint authentication", async (t) => {
     const res = await request(app)
       .post("/api/jobs")
       .set("Authorization", `Bearer ${accessToken}`)
-      .send({ 
+      .send({
         title: "New Job",
         description: "Job description",
         budgetMin: 50,
